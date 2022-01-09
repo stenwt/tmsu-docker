@@ -11,7 +11,7 @@ steps:
   image: plugins/kaniko
   settings:
     registry: registry.home.sud0.com
-    repo: tmsu
+    repo: registry.home.sud0.com/tmsu
     tags: latest
     username:
       from_secret: docker_username
