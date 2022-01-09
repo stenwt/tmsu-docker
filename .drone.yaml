@@ -8,7 +8,7 @@ metadata:
 
 steps:
 - name: kaniko
-  image: banzaicloud/drone-kaniko
+  image: plugins/kaniko
   settings:
     registry: registry.home.sud0.com
     repo: tmsu
