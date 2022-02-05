@@ -10,8 +10,8 @@ steps:
 - name: kaniko
   image: plugins/kaniko
   settings:
-    registry: registry.home.sud0.com
-    repo: registry.home.sud0.com/tmsu
+    registry: registry.sud0.com
+    repo: registry.sud0.com/tmsu
     tags: latest
     username:
       from_secret: docker_username
