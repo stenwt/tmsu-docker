@@ -7,12 +7,13 @@ metadata:
   namespace: drone
 
 steps:
-- name: kaniko
-  image: plugins/kaniko
+- name: docker build
+  image: plugins/docker
   settings:
     registry: registry.sud0.com
     repo: registry.sud0.com/tmsu
     tags: latest
+    insecure: true
     username:
       from_secret: docker_username
     password:
